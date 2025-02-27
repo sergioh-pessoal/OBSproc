@@ -24,7 +24,7 @@ if [[ "$target" =~ ^(wcoss2|hera|orion|jet)$ ]]; then
   module list
   set -x
 fi
-
+exit()
 # Re-use or create a new BUILD_DIR (Default: create new BUILD_DIR)
 [[ ${BUILD_CLEAN:-"YES"} =~ [yYtT] ]] && rm -rf $BUILD_DIR
 mkdir -p $BUILD_DIR && cd $BUILD_DIR
